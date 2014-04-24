@@ -1,0 +1,40 @@
+/*!
+Theme Name: Norion
+Theme URI: https://github.com/hansagastyra/norion
+Author: Hans Agastyra
+Author URI: http://hansagastyra.esy.es/
+Description: Norion will bring another dimension to your website. Sleek, elegant, and beautifully done.
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Domain Path: /languages/
+Text Domain: norion
+Tags: norion, white, sleek, elegant, sidebar, widget, custom
+
+*/
+
+// configure the style from settings
+@import 'modules/settings';
+
+// reset styles should stay at the top
+// @import 'modules/reset';
+
+// move mixins to their own partial
+@import 'modules/mixins';
+
+// feel free to add any new files you want; if you add them this list they'll be included
+@import 'modules/global';
+@import 'modules/typography';
+@import 'modules/container';
+@import 'modules/header';
+@import 'modules/footer';
+@import 'modules/forms';
+@import 'modules/layout';
+@import 'modules/menu';
+@import 'modules/content';
+@import 'modules/postformats';
+@import 'modules/media';
+@import 'modules/navigation';
+@import 'modules/comments';
+@import 'modules/widgets';
+@import 'modules/infinitescroll';

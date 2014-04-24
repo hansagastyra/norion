@@ -1,0 +1,13 @@
+/* =Footer
+----------------------------------------------- */
+$footer-text-color : white;
+$footer-bg : $black;
+.site-footer{
+    background: $footer-bg;
+    color: $footer-text-color;
+    padding: 2.5em 0;
+    text-align: center;
+    a{
+        color: $footer-text-color;
+    }
+}

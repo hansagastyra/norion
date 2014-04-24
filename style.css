@@ -1,0 +1,824 @@
+/*
+Theme Name: Norion
+Theme URI: https://github.com/hansagastyra/norion
+Author: Hans Agastyra
+Author URI: http://hansagastyra.esy.es/
+Description: Norion will bring another dimension to your website. Sleek, elegant, and beautifully done.
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Domain Path: /languages/
+Text Domain: norion
+Tags: norion, white, sleek, elegant, sidebar, widget, custom
+
+*/
+.clear:before,
+.entry-content:before,
+.comment-content:before,
+.site-header:before,
+.site-content:before,
+.site-footer:before, .gallery:before, .clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after, .gallery:after {
+  content: "";
+  display: table; }
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after, .gallery:after {
+  clear: both; }
+
+/* =Global
+----------------------------------------------- */
+/* Alignment */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto; }
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important; }
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar */ }
+
+/* Clearing */
+body,
+button,
+input,
+select,
+textarea {
+  color: #404040;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  clear: both;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 1.65em; }
+
+h2 {
+  font-size: 1.4em; }
+
+h3 {
+  font-size: 1.25em; }
+
+h4 {
+  font-size: 1.1em; }
+
+h5 {
+  font-size: 1.1em; }
+
+h6 {
+  font-size: 1em; }
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
+/* Text elements */
+p {
+  margin-bottom: 1.5em;
+  font-size: 1em; }
+
+ul, ol, dl {
+  margin: 0 0 1.5em 3em;
+  font-size: 1em; }
+
+ul {
+  list-style: disc; }
+
+ol {
+  list-style: decimal; }
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin: 0 1.5em 1.5em; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn, cite, em, i {
+  font-style: italic; }
+
+blockquote {
+  margin: 0 1.5em; }
+
+address {
+  margin: 0 0 1.5em; }
+
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  padding: 1.6em;
+  overflow: auto;
+  max-width: 100%; }
+
+code, kbd, tt, var {
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  bottom: 1ex; }
+
+sub {
+  top: .5ex; }
+
+small {
+  font-size: 75%; }
+
+big {
+  font-size: 125%; }
+
+figure {
+  margin: 0; }
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%; }
+
+th {
+  font-weight: bold; }
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */ }
+
+/* Links */
+a {
+  color: #404040; }
+  a:hover, a:active, a:focus {
+    color: black; }
+
+a:visited {
+  color: none; }
+
+/* =Container
+----------------------------------------------- */
+.row {
+  margin: 0;
+  padding: 0;
+  max-width: none; }
+
+.site-content {
+  background: white;
+  border-top: 1.5em solid; }
+
+.content-area {
+  padding: 4em 0.5em 0 0.5em; }
+
+@media all and (min-width: 64.063em) {
+  .content-area {
+    padding: 4em 5% 0 10%; }
+
+  .page .content-area {
+    padding-bottom: 4em; }
+  .page .hentry {
+    border-bottom: 3px solid; } }
+/* =Header
+----------------------------------------------- */
+.site-title, .site-description {
+  font-weight: 300; }
+
+.header-top {
+  padding: 1.25em 5% 5px;
+  text-align: center;
+  background: white;
+  border-bottom: 1.5em solid; }
+
+.site-banner {
+  padding: 4em 5%; }
+  .site-banner h1, .site-banner h2, .site-banner h3 {
+    margin: 0;
+    color: white;
+    font-family: "Montserrat", "Raleway", Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+  .site-banner h1, .site-banner h2 {
+    font-size: 3em;
+    font-weight: bold; }
+  .site-banner h3 {
+    max-width: 300px;
+    font-size: 1.75em; }
+
+@media all and (min-width: 40.063em) {
+  .header-top {
+    padding: 1.25em 10% 5px; }
+
+  .site-banner {
+    padding: 4em 10%; } }
+/* =Footer
+----------------------------------------------- */
+.site-footer {
+  background: #404040;
+  color: white;
+  padding: 2.5em 0;
+  text-align: center; }
+  .site-footer a {
+    color: white; }
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* Corrects font size not being inherited in all browsers */
+  margin: 0;
+  /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline;
+  /* Improves appearance and consistency in all browsers */
+  *vertical-align: middle;
+  /* Improves appearance and consistency in all browsers */ }
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 0;
+  border-color: none;
+  border-radius: 0;
+  background: #404040;
+  box-shadow: none;
+  color: white;
+  cursor: pointer;
+  /* Improves usability and consistency of cursor style between image-type 'input' and others */
+  -webkit-appearance: button;
+  /* Corrects inability to style clickable 'input' types in iOS */
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: .6em 1em .4em; }
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: none;
+  box-shadow: none;
+  background: black; }
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+  border-color: none;
+  box-shadow: none; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  /* Addresses excess padding in IE8/9 */ }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+input[type="search"]::-webkit-search-decoration {
+  /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 0; }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  color: #111; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  padding: 3px; }
+
+textarea {
+  overflow: auto;
+  /* Removes default vertical scrollbar in IE6/7/8/9 */
+  padding-left: 3px;
+  vertical-align: top;
+  /* Improves readability and alignment in all browsers */
+  width: 100%; }
+
+/* =Menu
+----------------------------------------------- */
+.main-navigation {
+  clear: both;
+  display: inline-block;
+  margin-top: 0.5em;
+  font-weight: 300; }
+  .main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+    .main-navigation ul li {
+      float: left;
+      position: relative;
+      padding: 0 10px;
+      background: white; }
+      .main-navigation ul li a {
+        display: block;
+        text-decoration: none; }
+      .main-navigation ul li:hover > a:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-bottom: 10px solid #404040;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        display: block;
+        position: absolute;
+        top: 28px;
+        left: calc(50% - 10px); }
+      .main-navigation ul li:hover > ul {
+        display: block; }
+    .main-navigation ul .current_page_item a:before, .main-navigation ul .current-menu-item a:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-bottom: 10px solid #404040;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      display: block;
+      position: absolute;
+      top: 28px;
+      left: calc(50% - 10px); }
+    .main-navigation ul ul {
+      display: none;
+      float: left;
+      position: absolute;
+      top: 1.5em;
+      left: 0;
+      z-index: 99999;
+      text-align: left; }
+      .main-navigation ul ul li a {
+        width: 200px; }
+      .main-navigation ul ul ul {
+        left: 100%;
+        top: 0; }
+
+.menu-toggle {
+  display: none;
+  cursor: pointer; }
+
+@media screen and (max-width: 600px) {
+  .menu-toggle,
+  .main-navigation.toggled .nav-menu {
+    display: block; } }
+/* =Content
+----------------------------------------------- */
+.hentry {
+  margin: 0 0 2em;
+  font-size: 95%;
+  overflow: hidden;
+  border-top: 3px solid #404040; }
+
+.byline,
+.updated {
+  display: none; }
+
+.single .byline, .group-blog .byline {
+  display: inline; }
+
+.entry-meta {
+  float: left;
+  margin-right: 1.5em; }
+  .entry-meta .meta-date {
+    font-family: "Montserrat", "Raleway", Helvetica, Arial, sans-serif;
+    background: #404040;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    padding: 0.5em 1em; }
+    .entry-meta .meta-date .meta-day {
+      font-weight: bold; }
+    .entry-meta .meta-date .meta-month, .entry-meta .meta-date .meta-year {
+      font-size: 0.8em; }
+  .entry-meta .entry-author, .entry-meta .comments-link, .entry-meta .edit-link {
+    max-width: 90%;
+    margin: auto;
+    padding: 0.5em 0;
+    font-size: 10px;
+    text-align: center; }
+  .entry-meta .comments-link, .entry-meta .edit-link {
+    border-top: 1px solid #404040; }
+
+.entry-block {
+  overflow: hidden;
+  padding: 0 0.5em 0 0; }
+  .entry-block .readmore {
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.page-title {
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  margin-bottom: 2em;
+  padding: 0.25em 0;
+  text-align: center; }
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0; }
+  .page-content a,
+  .entry-content a,
+  .entry-summary a {
+    text-decoration: underline; }
+  .page-content a:hover,
+  .entry-content a:hover,
+  .entry-summary a:hover {
+    text-decoration: none; }
+  .page-content .readmore a,
+  .entry-content .readmore a,
+  .entry-summary .readmore a {
+    text-decoration: none; }
+
+.attachment-post-thumbnail {
+  margin: 2em 0; }
+
+.single .entry-footer {
+  padding: 1em 0.5em;
+  border-top: 1px solid; }
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em; }
+
+.author-container {
+  margin-bottom: 2em;
+  font-size: 0.9em;
+  min-height: 130px; }
+
+.author-header {
+  margin-top: 0.5em; }
+
+.author-image {
+  float: left; }
+
+.author-bio {
+  overflow: hidden;
+  padding-left: 1em; }
+
+/* =Asides
+----------------------------------------------- */
+.blog .format-aside .entry-title, .archive .format-aside .entry-title {
+  display: none; }
+
+/* =Media
+----------------------------------------------- */
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0; }
+
+.wp-caption {
+  border: 1px solid #ccc;
+  margin-bottom: 1.5em;
+  max-width: 100%; }
+  .wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 1.2% auto 0;
+    max-width: 98%; }
+  .wp-caption .wp-caption-text {
+    text-align: center;
+    margin: 0.8075em 0; }
+
+.gallery {
+  margin-bottom: 1.5em; }
+  .gallery .gallery-item {
+    float: left; }
+    .gallery .gallery-item .gallery-icon a {
+      display: block; }
+    .gallery .gallery-item .gallery-icon img {
+      border: none;
+      height: auto;
+      margin-bottom: 0; }
+    .gallery .gallery-item .gallery-caption {
+      margin: 0;
+      text-align: center; }
+
+/* Fluid Gallery Columns
+   works well if you remove the default gallery styling
+   by adding the following to your functions.php
+   add_filter( 'use_default_gallery_style', '__return_false' );
+*/
+.gallery-columns-2 .gallery-item {
+  width: 49%;
+  margin-right: 2; }
+
+.gallery-columns-2 .gallery-item:nth-of-type(2n - 2) {
+  margin-right: 0;
+  clear: right; }
+
+.gallery-columns-3 .gallery-item {
+  width: 32%;
+  margin-right: 2; }
+
+.gallery-columns-3 .gallery-item:nth-of-type(3n - 3) {
+  margin-right: 0;
+  clear: right; }
+
+.gallery-columns-4 .gallery-item {
+  width: 23.5%;
+  margin-right: 2; }
+
+.gallery-columns-4 .gallery-item:nth-of-type(4n - 4) {
+  margin-right: 0;
+  clear: right; }
+
+.gallery-columns-5 .gallery-item {
+  width: 18.4%;
+  margin-right: 2; }
+
+.gallery-columns-5 .gallery-item:nth-of-type(5n - 5) {
+  margin-right: 0;
+  clear: right; }
+
+.gallery-columns-6 .gallery-item {
+  width: 15%;
+  margin-right: 2; }
+
+.gallery-columns-6 .gallery-item:nth-of-type(6n - 6) {
+  margin-right: 0;
+  clear: right; }
+
+.gallery-columns-7 .gallery-item {
+  width: 12.57143%;
+  margin-right: 2; }
+
+.gallery-columns-7 .gallery-item:nth-of-type(7n - 7) {
+  margin-right: 0;
+  clear: right; }
+
+.gallery-columns-8 .gallery-item {
+  width: 10.75%;
+  margin-right: 2; }
+
+.gallery-columns-8 .gallery-item:nth-of-type(8n - 8) {
+  margin-right: 0;
+  clear: right; }
+
+.gallery-columns-9 .gallery-item {
+  width: 9.33333%;
+  margin-right: 2; }
+
+.gallery-columns-9 .gallery-item:nth-of-type(9n - 9) {
+  margin-right: 0;
+  clear: right; }
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+  max-width: 100%; }
+
+/* =Navigation
+----------------------------------------------- */
+.site-main [class*="navigation"] {
+  margin: 0 0 2em;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-weight: bold; }
+  .site-main [class*="navigation"] .nav-next {
+    text-align: right; }
+
+.paging-navigation .nav-previous {
+  float: left;
+  width: 50%; }
+.paging-navigation .nav-next {
+  float: right;
+  width: 50%; }
+
+.post-navigation {
+  padding: 1em 0;
+  border-top: 3px solid;
+  border-bottom: 3px solid; }
+
+/* =Comments
+----------------------------------------------- */
+.comments-area {
+  border-top: 3px solid;
+  margin-bottom: 4em;
+  font-size: 0.9em; }
+  .comments-area ol {
+    list-style: none;
+    margin: 0; }
+  .comments-area .avatar {
+    position: absolute; }
+  .comments-area .says {
+    display: none; }
+  .comments-area .fn, .comments-area .comment-metadata, .comments-area .comment-content, .comments-area .reply {
+    margin-left: 60px; }
+  .comments-area .fn {
+    display: block; }
+  .comments-area .reply {
+    padding: 0.5em 0; }
+
+.comments-title {
+  padding: 0.5em 0; }
+
+.comment {
+  margin-top: 1em; }
+
+.comment-content:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #404040;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 10px; }
+
+.comment-content {
+  margin-top: 1em;
+  position: relative;
+  background: #404040;
+  color: white;
+  padding: 0.5em 10px;
+  word-wrap: break-word; }
+
+.vcard {
+  display: initial;
+  margin: 0;
+  border: none;
+  padding: 0; }
+
+.comment-respond {
+  margin: 2em 0 2em 60px; }
+  .comment-respond .comment-form label {
+    display: inline-block;
+    min-width: 4.5em; }
+  .comment-respond .comment-form input {
+    max-width: 100%; }
+  .comment-respond .comment-form iframe {
+    height: initial; }
+  .comment-respond .form-submit {
+    text-align: right; }
+
+@media all and (min-width: 64.063em) {
+  .comments-area .children {
+    margin-left: 60px; } }
+/* =Widgets
+----------------------------------------------- */
+.widget-area {
+  padding: 2em 2em 4em 2em; }
+
+.widget {
+  margin: 0 0 2.5em;
+  font-size: 85%;
+  /* Make sure select elements fit in widgets */
+  /* Change unordered list style */ }
+  .widget select {
+    width: 100%; }
+  .widget ul {
+    list-style: none; }
+    .widget ul li:before {
+      content: "\f0da";
+      font-family: 'FontAwesome';
+      float: left;
+      margin-left: -1em; }
+
+.widget-title {
+  font-weight: 400; }
+
+/* Search widget */
+.search-field {
+  width: 100%; }
+
+.search-submit {
+  display: none; }
+
+/* Calendar widget */
+.widget_calendar caption {
+  font-weight: bold;
+  font-size: 1.25em;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em; }
+.widget_calendar tbody tr td {
+  text-align: center;
+  border: 1px solid; }
+.widget_calendar th {
+  border: 1px solid; }
+.widget_calendar tfoot tr td#next {
+  text-align: right; }
+
+@media all and (min-width: 40.063em) {
+  .widget-area {
+    padding-top: 4em; } }
+@media all and (min-width: 64.063em) {
+  .widget-area {
+    padding: 4em 10% 4em 2.5%; } }
+/* =Infinite Scroll
+----------------------------------------------- */
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .paging-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none; }
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+.infinity-end.neverending .site-footer {
+  display: block; }

@@ -1,0 +1,68 @@
+/* =Widgets
+----------------------------------------------- */
+.widget-area{
+        padding: 2em 2em 4em 2em;
+}
+.widget {
+	margin: 0 0 2.5em;
+        font-size: 85%;
+	/* Make sure select elements fit in widgets */
+	select {
+            width: 100%;
+	}
+        
+        /* Change unordered list style */
+        ul{
+            list-style: none;
+            li:before{
+                content: "\f0da";
+                font-family: 'FontAwesome';
+                float: left;
+                margin-left: -1em;
+            }
+        }
+}
+
+.widget-title{
+        font-weight: 400;
+}
+
+/* Search widget */
+.search-field {
+    width: 100%;
+}
+.search-submit {
+    display: none;
+}
+
+/* Calendar widget */
+.widget_calendar{
+    caption{
+        font-weight: bold;
+        font-size: 1.25em;
+        margin-top: 0.2em;
+        margin-bottom: 0.5em;
+    }
+    tbody tr td{
+        text-align: center;
+        border: 1px solid;
+    }
+    th{
+        border: 1px solid;
+    }
+    tfoot tr td#next{
+        text-align: right;
+    }
+}
+
+@media all and (min-width: 40.063em){
+    .widget-area{
+        padding-top: 4em;
+    }
+}
+
+@media all and (min-width: 64.063em) {
+    .widget-area{
+        padding: 4em 10% 4em 2.5%;
+    }
+}

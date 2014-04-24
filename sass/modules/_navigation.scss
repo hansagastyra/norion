@@ -1,0 +1,28 @@
+/* =Navigation
+----------------------------------------------- */
+
+.site-main [class*="navigation"] {
+	margin: 0 0 2em;
+	overflow: hidden;
+        text-transform: uppercase;
+        font-weight: bold;
+
+	.nav-next {
+		text-align: right;
+	}
+}
+.paging-navigation{
+    .nav-previous{
+        float: left;
+        width: 50%;
+    }
+    .nav-next{
+        float: right;
+        width: 50%;
+    }
+}
+.post-navigation{
+    padding: 1em 0;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}

@@ -1,0 +1,32 @@
+/* =Container
+----------------------------------------------- */
+.row{
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+.site-content{
+    background: $body-background;
+    border-top: 1.5em solid;
+}
+.content-area{
+    padding: 4em 0.5em 0 0.5em;
+}
+
+@media all and (min-width: 40.063em){
+    
+}
+
+@media all and (min-width: 64.063em) {
+    .content-area{
+        padding: 4em 5% 0 10%;
+    }
+    .page{
+        .content-area{
+            padding-bottom: 4em;
+        }
+        .hentry{
+            border-bottom: 3px solid;
+        }
+    }
+}

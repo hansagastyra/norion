@@ -1,0 +1,101 @@
+/* =Menu
+----------------------------------------------- */
+
+.main-navigation {
+	clear: both;
+	display: inline-block;
+        margin-top: 0.5em;
+        font-weight: 300;
+	// first level
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		li {
+			float: left;
+			position: relative;
+                        padding: 0 10px;
+                        background: white;
+			a {
+				display: block;
+				text-decoration: none;
+			}
+
+			// link hover
+			&:hover {
+				> a:before {
+                                    content: '';
+                                    width: 0;
+                                    height: 0;
+                                    border-bottom: 10px solid $black;
+                                    border-left: 10px solid transparent;
+                                    border-right: 10px solid transparent;
+                                    display: block;
+                                    position: absolute;
+                                    top: 28px;
+                                    left: calc(50% - 10px);
+                                }
+				> ul { display: block; }
+			}
+
+		}
+
+		.current_page_item, .current-menu-item {
+			a:before {
+                            content: '';
+                            width: 0;
+                            height: 0;
+                            border-bottom: 10px solid $black;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            display: block;
+                            position: absolute;
+                            top: 28px;
+                            left: calc(50% - 10px);
+                        }
+		}
+
+		// second level
+		ul {
+			display: none;
+			float: left;
+			position: absolute;
+				top: $vspacing;
+				left: 0;
+			z-index: 99999;
+                        text-align: left;
+			&:hover {
+				> a {};
+			}
+
+			li {
+				a {
+					width: 200px;
+					&:hover {};
+				}
+			}
+
+			// third level
+			ul {
+				left: 100%;
+				top: 0;
+			}
+
+		}
+	}
+
+}
+
+//Small menu 
+.menu-toggle {
+	display: none;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-toggle,
+  .main-navigation.toggled .nav-menu {
+    display: block;
+  }
+}

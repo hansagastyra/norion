@@ -1,0 +1,107 @@
+/* =Content
+----------------------------------------------- */
+$border-color: #404040;
+$inside-color: white;
+$author-avatar-margin: 110px;
+
+.sticky {
+}
+.hentry {
+	margin: 0 0 2em;
+        font-size: 95%;
+        overflow: hidden;
+        border-top: 3px solid $border-color;
+}
+.byline,
+.updated {
+	display: none;
+}
+.single, .group-blog {
+	.byline {
+		display: inline;
+	}
+}
+.entry-meta{
+    float: left;
+    margin-right: 1.5em;
+    .meta-date{
+        font-family: $special-font;
+        background: $border-color;
+        color: $inside-color;
+        text-align: center;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        padding: 0.5em 1em;
+        .meta-day{
+            font-weight: bold;
+        }
+        .meta-month, .meta-year{
+            font-size: 0.8em;
+        }
+    }
+    .entry-author, .comments-link, .edit-link{
+        max-width: 90%;
+        margin: auto;
+        padding: 0.5em 0;
+        font-size: 10px;
+        text-align: center;
+    }
+    .comments-link, .edit-link{
+        border-top: 1px solid $border-color;
+    }
+}
+.entry-block{
+    overflow: hidden;
+    padding: 0 0.5em 0 0;
+    .readmore{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+.page-title{
+        border-top: 3px solid;
+        border-bottom: 3px solid;
+        margin-bottom: 2em;
+        padding: 0.25em 0;
+        text-align: center;
+}
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: $vspacing 0 0;
+        a{
+            text-decoration: underline;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        .readmore a{
+            text-decoration: none;
+        }
+}
+.attachment-post-thumbnail{
+        margin: 2em 0;
+}
+.single .entry-footer{
+        padding: 1em 0.5em;
+        border-top: 1px solid;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 $vspacing;
+}
+.author-container{
+        margin-bottom: 2em;
+        font-size: 0.9em;
+        min-height: $author-avatar-margin + 20px;
+}
+.author-header{
+    margin-top: 0.5em;
+}
+.author-image{
+    float: left;
+}
+.author-bio{
+    overflow: hidden;
+    padding-left: 1em;
+}
